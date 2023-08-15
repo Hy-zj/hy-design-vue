@@ -1,0 +1,71 @@
+{
+  "name": "hy-design-vue",
+  "version": "0.0.1",
+  "private": false,
+  "files": [
+    "dist"
+  ],
+  "main": "./dist/hy-design-vue.umd.js",
+  "module": "./dist/hy-design-vue.js",
+  "exports": {
+    "./dist/style.css": "./dist/style.css",
+    "./css": "./dist/style.css",
+    ".": {
+      "import": "./dist/hy-design-vue.js",
+      "require": "./dist/hy-design-vue.umd.js"
+    }
+  },
+  "scripts": {
+    "dev": "vite",
+    "docs:dev": "vitepress dev docs --port 3000",
+    "docs:build": "vitepress build docs",
+    "docs:deploy": "sh ./script/deploy.sh",
+    "pub": "sh ./script/publish.sh",
+    "preview": "vite preview",
+    "build": "vite build",
+    "lint": "eslint . --ext .vue,.js,.jsx,.cjs,.mjs,.ts,.tsx,.cts,.mts --fix --ignore-path .gitignore",
+    "format": "prettier --write src/"
+  },
+  "dependencies": {
+    "ant-design-vue": "4.x",
+    "terser": "^5.19.2",
+    "vitepress": "^1.0.0-rc.4",
+    "vue": "^3.3.4",
+    "vue-router": "^4.2.4"
+  },
+  "devDependencies": {
+    "@rushstack/eslint-patch": "^1.3.2",
+    "@vitejs/plugin-vue": "^4.2.3",
+    "@vitejs/plugin-vue-jsx": "^3.0.1",
+    "@vue/eslint-config-prettier": "^8.0.0",
+    "@vue/test-utils": "^2.4.1",
+    "autoprefixer": "^10.4.14",
+    "eslint": "^8.45.0",
+    "eslint-plugin-vue": "^9.15.1",
+    "jsdom": "^22.1.0",
+    "less": "4.1.3",
+    "postcss": "^8.4.27",
+    "postcss-loader": "^7.3.3",
+    "prettier": "^3.0.0",
+    "unplugin-vue-components": "^0.25.1",
+    "vite": "^4.4.6",
+    "vitest": "^0.33.0"
+  },
+  "description": "这是基于ant-design-vue@4+vite的二次封装组件库",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Hy-zj/hy-design-vue.git"
+  },
+  "keywords": [
+    "Vue3",
+    "Vite",
+    "UI",
+    "Components"
+  ],
+  "author": "Hy-zj",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Hy-zj/hy-design-vue/issues"
+  },
+  "homepage": "https://github.com/Hy-zj/hy-design-vue#readme"
+}
