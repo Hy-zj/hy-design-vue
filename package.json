@@ -6,12 +6,12 @@
     "dist"
   ],
   "main": "./dist/hy-design-vue.umd.js",
-  "module": "./dist/hy-design-vue.js",
+  "module": "./dist/hy-design-vue.mjs",
   "exports": {
     "./dist/style.css": "./dist/style.css",
     "./css": "./dist/style.css",
     ".": {
-      "import": "./dist/hy-design-vue.js",
+      "import": "./dist/hy-design-vue.mjs",
       "require": "./dist/hy-design-vue.umd.js"
     }
   },
